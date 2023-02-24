@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snap test Home pages 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "margin": 5,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      testID="backButton"
+    >
+      <MockedIonicons
+        name="chevron-back-outline"
+        style={
+          Object {
+            "borderRadius": 40,
+            "color": "#2C3333",
+            "fontSize": 30,
+            "padding": 10,
+          }
+        }
+      />
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#2C3333",
+          "fontSize": 20,
+          "fontWeight": "600",
+          "padding": 10,
+        }
+      }
+    >
+      Save to contact
+    </Text>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      testID="submitButton"
+    >
+      <MockedIonicons
+        name="checkmark-sharp"
+        style={
+          Object {
+            "borderRadius": 40,
+            "color": "#2C3333",
+            "fontSize": 30,
+            "padding": 10,
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignContent": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+    >
+      <MockedIonicons
+        name="person"
+        style={
+          Object {
+            "backgroundColor": "#EEEEEF",
+            "borderRadius": 100,
+            "color": "white",
+            "fontSize": 40,
+            "padding": 20,
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <TextInput
+      autoCapitalize="none"
+      autoCorrect={false}
+      onChangeText={[Function]}
+      placeholder="Input Last Name"
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#333",
+          "color": "#2C3333",
+          "fontWeight": "bold",
+          "marginHorizontal": 35,
+          "marginTop": 8,
+          "paddingLeft": 20,
+        }
+      }
+      value=""
+    />
+    <TextInput
+      autoCapitalize="none"
+      autoCorrect={false}
+      onChangeText={[Function]}
+      placeholder="Input Last Name"
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#333",
+          "color": "#2C3333",
+          "fontWeight": "bold",
+          "marginHorizontal": 35,
+          "marginTop": 8,
+          "paddingLeft": 20,
+        }
+      }
+      value=""
+    />
+    <Text
+      style={
+        Object {
+          "color": "#000",
+          "fontSize": 11,
+          "marginHorizontal": 32,
+          "marginVertical": 7,
+        }
+      }
+      testID="textalert"
+    >
+      
+    </Text>
+    <TextInput
+      keyboardType="numeric"
+      onChangeText={[Function]}
+      placeholder="Age?"
+      style={
+        Object {
+          "alignSelf": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "#333",
+          "fontWeight": "bold",
+          "marginHorizontal": 12,
+          "marginTop": 8,
+          "textAlign": "center",
+          "width": 100,
+        }
+      }
+      value=""
+    />
+  </View>
+</View>
+`;

@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Edit Contact snaps render corretly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "margin": 5,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      testID="backButton"
+    >
+      <Mocked Ionicons
+        name="x"
+        style={
+          Object {
+            "borderRadius": 40,
+            "color": "#2C3333",
+            "fontSize": 30,
+            "padding": 10,
+          }
+        }
+      />
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#2C3333",
+          "fontSize": 20,
+          "fontWeight": "600",
+          "padding": 10,
+        }
+      }
+    >
+      Edit contact
+    </Text>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      testID="submitButton"
+    >
+      <Mocked Ionicons
+        name="checkmark-sharp"
+        style={
+          Object {
+            "borderRadius": 40,
+            "color": "#2C3333",
+            "fontSize": 30,
+            "padding": 10,
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignContent": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+    >
+      <Image
+        source={
+          Object {
+            "uri": undefined,
+          }
+        }
+        style={
+          Object {
+            "borderRadius": 50,
+            "height": 90,
+            "width": 90,
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <TextInput
+      autoCapitalize="none"
+      autoCorrect={false}
+      onChangeText={[Function]}
+      placeholder="Input Last Name"
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#333",
+          "color": "#2C3333",
+          "fontWeight": "bold",
+          "marginHorizontal": 35,
+          "marginTop": 8,
+          "paddingLeft": 20,
+        }
+      }
+      testID="firstname"
+    />
+    <TextInput
+      autoCapitalize="none"
+      autoCorrect={false}
+      onChangeText={[Function]}
+      placeholder="Input Last Name"
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#333",
+          "color": "#2C3333",
+          "fontWeight": "bold",
+          "marginHorizontal": 35,
+          "marginTop": 8,
+          "paddingLeft": 20,
+        }
+      }
+    />
+    <Text
+      style={
+        Object {
+          "color": "#000",
+          "fontSize": 11,
+          "marginHorizontal": 32,
+          "marginVertical": 7,
+        }
+      }
+      testID="error"
+    >
+      
+    </Text>
+    <TextInput
+      keyboardType="numeric"
+      onChangeText={[Function]}
+      placeholder="Age?"
+      style={
+        Object {
+          "alignSelf": "center",
+          "borderBottomWidth": 1,
+          "borderColor": "#333",
+          "fontWeight": "bold",
+          "marginHorizontal": 12,
+          "marginTop": 8,
+          "textAlign": "center",
+          "width": 100,
+        }
+      }
+      value="undefined"
+    />
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginVertical": 30,
+          "opacity": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "backgroundColor": "#eb6149",
+            "borderRadius": 8,
+            "color": "#FFF",
+            "padding": 8,
+          }
+        }
+      >
+        Delete Contact?
+      </Text>
+    </View>
+  </View>
+</View>
+`;

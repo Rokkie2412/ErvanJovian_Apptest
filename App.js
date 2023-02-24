@@ -1,20 +1,30 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Home from "./components/screens/Home";
+import EditContact from "./components/screens/EditContact";
+import FlashMessage from "react-native-flash-message";
+import { PersistGate } from 'redux-persist/integration/react'
+import { Provider } from "react-redux";
+import reduxStore from './components/redux/store'
+import AddContacts from "./components/screens/AddContact";
+const App = () => {
+  const stack = createNativeStackNavigator()
+  const {store,persistor} = reduxStore()
+  return(
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <NavigationContainer>
+          <stack.Navigator initialRouteName="Home" screenOptions={{headerShown:false}}>
+            <stack.Screen name="Home" component={Home}/>
+            <stack.Screen name="AddContact" component={AddContacts}/>
+            <stack.Screen name="EditContact" component={EditContact}/>
+          </stack.Navigator>
+          <FlashMessage position='top'/>
+        </NavigationContainer>
+      </PersistGate>
+    </Provider>
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App
