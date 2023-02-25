@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, {useState, useEffect} from 'react';
 import {
   View,
@@ -7,6 +8,7 @@ import {
   FlatList,
   TouchableOpacity,
   Image,
+  ToastAndroid,
 } from 'react-native';
 import SearchBar from './SearchBar';
 import {useSelector, useDispatch} from 'react-redux';
@@ -37,8 +39,12 @@ const Home = ({navigation}) => {
       getData();
     });
     return unsubscribe;
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [navigation]);
+
+  useEffect(() => {
+    checkInternet();
+    getData();
+  }, []);
 
   intervalCheck();
 
@@ -46,6 +52,15 @@ const Home = ({navigation}) => {
     <View style={styles.mainContainer}>
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Contacts</Text>
+        <Ion
+          style={styles.refresh}
+          onPress={() => {
+            getData();
+            setSearch('');
+            ToastAndroid.show('Refreshed', ToastAndroid.SHORT);
+          }}
+          name="refresh-outline"
+        />
       </View>
 
       <View>
@@ -118,14 +133,19 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF',
   },
   header: {
+    display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
+    alignSelf: 'flex-end',
+    width: '60%',
+    marginRight: '1.2%',
   },
   headerTitle: {
     fontSize: 24,
     color: 'black',
     fontWeight: '500',
     marginTop: 5,
+    textAlign: 'center',
   },
   addButton: {
     position: 'absolute',
@@ -172,6 +192,12 @@ const styles = StyleSheet.create({
   },
   addButtonPlus: {
     alignItems: 'flex-end',
+  },
+  refresh: {
+    fontSize: 32,
+    alignItems: 'flex-end',
+    alignSelf: 'flex-end',
+    color: '#2C3333',
   },
 });
 

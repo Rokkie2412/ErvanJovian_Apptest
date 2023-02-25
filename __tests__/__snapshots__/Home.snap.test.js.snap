@@ -12,8 +12,12 @@ exports[`Snap test Home pages 1`] = `
   <View
     style={
       Object {
+        "alignSelf": "flex-end",
+        "display": "flex",
         "flexDirection": "row",
-        "justifyContent": "center",
+        "justifyContent": "space-between",
+        "marginRight": "1.2%",
+        "width": "60%",
       }
     }
   >
@@ -24,11 +28,24 @@ exports[`Snap test Home pages 1`] = `
           "fontSize": 24,
           "fontWeight": "500",
           "marginTop": 5,
+          "textAlign": "center",
         }
       }
     >
       Contacts
     </Text>
+    <MockedIonicons
+      name="refresh-outline"
+      onPress={[Function]}
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "alignSelf": "flex-end",
+          "color": "#2C3333",
+          "fontSize": 32,
+        }
+      }
+    />
   </View>
   <View>
     <View

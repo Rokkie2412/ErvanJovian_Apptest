@@ -134,6 +134,7 @@ exports[`Snap test Home pages 1`] = `
       autoCorrect={false}
       onChangeText={[Function]}
       placeholder="Input Last Name"
+      placeholderTextColor="#8c8c8c"
       style={
         Object {
           "borderBottomWidth": 1,
@@ -152,6 +153,7 @@ exports[`Snap test Home pages 1`] = `
       autoCorrect={false}
       onChangeText={[Function]}
       placeholder="Input Last Name"
+      placeholderTextColor="#8c8c8c"
       style={
         Object {
           "borderBottomWidth": 1,
@@ -182,11 +184,13 @@ exports[`Snap test Home pages 1`] = `
       keyboardType="numeric"
       onChangeText={[Function]}
       placeholder="Age?"
+      placeholderTextColor="#8c8c8c"
       style={
         Object {
           "alignSelf": "center",
           "borderBottomWidth": 1,
           "borderColor": "#333",
+          "color": "#2C3333",
           "fontWeight": "bold",
           "marginHorizontal": 12,
           "marginTop": 8,
