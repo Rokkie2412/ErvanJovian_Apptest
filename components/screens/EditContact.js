@@ -102,6 +102,7 @@ const EditContact = ({navigation, route}) => {
             contactValid(newFirst, setErrorMessage, setError);
           }}
           placeholder="Input Last Name"
+          placeholderTextColor="#8c8c8c"
           autoCapitalize={'none'}
           autoCorrect={false}
           style={styles.Lastname}
@@ -113,6 +114,7 @@ const EditContact = ({navigation, route}) => {
             contactValid(newLast, setErrorMessage, setError);
           }}
           placeholder="Input Last Name"
+          placeholderTextColor="#8c8c8c"
           autoCapitalize={'none'}
           autoCorrect={false}
           style={styles.Lastname}
@@ -129,6 +131,7 @@ const EditContact = ({navigation, route}) => {
             }
           }}
           style={styles.age}
+          placeholderTextColor="#8c8c8c"
           placeholder="Age?"
           keyboardType="numeric"
         />
@@ -195,12 +198,12 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   Firstname: {
-    backgroundColor: '#EFEFEE',
     borderRadius: 50,
     marginTop: 15,
     marginHorizontal: 12,
     fontWeight: 'bold',
     paddingLeft: 20,
+    color: '#2C3333',
   },
   Lastname: {
     color: '#2C3333',
@@ -220,6 +223,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     borderBottomWidth: 1,
     borderColor: '#333',
+    color: '#2C3333',
   },
   imagePhoto: {
     height: 90,
